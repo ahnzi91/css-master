@@ -13,7 +13,7 @@
   flex-flow: row wrap;
 
   /* When we use Multi Line Container */ 
-  align-content: center;
+  /* align-content: center; */
 }
 
 .box {
@@ -28,3 +28,17 @@
   justify-content: center;
   align-items: center;
 }
+
+.box:first-child {
+  align-self: flex-start;
+}
+
+/* .box:nth-child(3) {
+  background-color: blueviolet;
+  order: 2;
+}
+
+.box:nth-child(6) {
+  background-color: aqua;
+  order: 1;
+} */
