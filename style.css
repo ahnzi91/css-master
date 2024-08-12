@@ -1,7 +1,10 @@
 .father {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   gap: 20px;
+
+  /* flex-flow: flex-direction / flex-wrap */
+  flex-flow: row wrap;
 }
 
 .box {
@@ -11,4 +14,8 @@
 
   font-size: 36px;
   color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
