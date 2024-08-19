@@ -1,0 +1,31 @@
+body {
+  margin: unset;
+}
+
+.father {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box {
+  height: 200px;
+  font-size: 36px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:first-child {
+  background-color: tomato;
+  flex-grow: 1;
+  flex-basis: 500px;
+  flex-shrink: 0;
+}
+
+.box:last-child {
+  background-color: teal;
+  flex-grow: 1;
+}

@@ -1,0 +1,38 @@
+.father {
+  display: grid;
+  grid-template-columns: 100px 200px 50px;
+  grid-template-rows: 200px 100px;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.child {
+  background-color: tomato;
+  display: flex;
+  color: white;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.child:first-child {
+  /* grid-row-start와 grid-row-end를 사용하여 박스 채우기  */
+  /* 
+    grid-row-start: 1;
+    grid-row-end: -1; 
+  */
+  
+  grid-row: 1 / -1;
+}
+
+.child:last-child {
+  background-color: aqua;
+
+  /* grid-column-start와 grid-column-end를 사용하여 박스 채우기  */
+  /* 
+    grid-column-start: 2;
+    grid-column-end: -1; 
+  */
+
+  grid-column: 2 / -1;
+}
